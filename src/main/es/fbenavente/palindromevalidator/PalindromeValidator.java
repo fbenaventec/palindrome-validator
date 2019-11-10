@@ -1,7 +1,7 @@
 package es.fbenavente.palindromevalidator;
 
 public class PalindromeValidator {
-    public boolean isAPalindrome(String text) {
+    public boolean isPalindrome(String text) {
         String textIgnoringCase = text.toLowerCase();
         char[] chars = textIgnoringCase.toCharArray();
         for (int i = 0; i < chars.length / 2; i++) {

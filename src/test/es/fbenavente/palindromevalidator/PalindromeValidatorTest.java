@@ -11,7 +11,7 @@ public class PalindromeValidatorTest {
     public void when_the_string_is_equal_to_the_reverse_string_should_return_true() {
         PalindromeValidator palindromeValidator = new PalindromeValidator();
 
-        boolean isValid = palindromeValidator.isAPalindrome("abba");
+        boolean isValid = palindromeValidator.isPalindrome("abba");
 
         assertThat(isValid, is(true));
     }
@@ -20,7 +20,7 @@ public class PalindromeValidatorTest {
     public void when_the_string_is_not_equal_to_the_reverse_string_should_return_false() {
         PalindromeValidator palindromeValidator = new PalindromeValidator();
 
-        boolean isValid = palindromeValidator.isAPalindrome("abbb");
+        boolean isValid = palindromeValidator.isPalindrome("abbb");
 
         assertThat(isValid, is(false));
     }
@@ -29,7 +29,7 @@ public class PalindromeValidatorTest {
     public void when_string_is_equals_to_the_reverse_string_but_contains_differences_by_case_should_return_true() {
         PalindromeValidator palindromeValidator = new PalindromeValidator();
 
-        boolean isValid = palindromeValidator.isAPalindrome("abBA");
+        boolean isValid = palindromeValidator.isPalindrome("abBA");
 
         assertThat(isValid, is(true));
     }
