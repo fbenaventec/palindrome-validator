@@ -2,6 +2,9 @@ package es.fbenavente.palindromevalidator;
 
 public class PalindromeValidator {
     public boolean isPalindrome(String text) {
+        if (text == null) {
+            return true;
+        }
         String textIgnoringCase = text.toLowerCase();
         char[] chars = textIgnoringCase.toCharArray();
         for (int i = 0; i < chars.length / 2; i++) {
