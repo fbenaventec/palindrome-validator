@@ -15,6 +15,16 @@ public class PalindromeValidatorTest {
 
         assertThat(isValid, is(true));
     }
+
+    @Test
+    public void when_the_string_is_empty_should_return_true() {
+        PalindromeValidator palindromeValidator = new PalindromeValidator();
+
+        boolean isValid = palindromeValidator.isPalindrome("");
+
+        assertThat(isValid, is(true));
+    }
+
     @Test
     public void when_the_string_is_equal_to_the_reverse_string_should_return_true() {
         PalindromeValidator palindromeValidator = new PalindromeValidator();
