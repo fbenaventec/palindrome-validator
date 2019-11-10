@@ -24,4 +24,13 @@ public class PalindromeValidatorTest {
 
         assertThat(isValid, is(false));
     }
+
+    @Test
+    public void when_string_is_equals_to_the_reverse_string_but_contains_differences_by_case_should_return_true() {
+        PalindromeValidator palindromeValidator = new PalindromeValidator();
+
+        boolean isValid = palindromeValidator.isAPalindrome("abBA");
+
+        assertThat(isValid, is(true));
+    }
 }
