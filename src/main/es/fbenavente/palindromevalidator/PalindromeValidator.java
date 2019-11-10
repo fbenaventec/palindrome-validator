@@ -5,15 +5,12 @@ public class PalindromeValidator {
         if (text == null) {
             return true;
         }
-        String textIgnoringCase = text.toLowerCase();
-        char[] chars = textIgnoringCase.toCharArray();
-        for (int i = 0; i < chars.length / 2; i++) {
-            char c1 = chars[i];
-            char c2 = chars[(chars.length -i)- 1];
-            if (c1 != c2) {
-                return false;
-            }
-        }
-        return true;
+        String reverseText = reverse(text);
+        return reverseText.equalsIgnoreCase(text);
+    }
+
+    private String reverse(String text) {
+        StringBuilder stringBuilder = new StringBuilder(text);
+        return stringBuilder.reverse().toString();
     }
 }
