@@ -15,4 +15,13 @@ public class PalindromeValidatorTest {
 
         assertThat(isValid, is(true));
     }
+
+    @Test
+    public void when_the_string_is_not_equal_to_the_reverse_string_should_return_false() {
+        PalindromeValidator palindromeValidator = new PalindromeValidator();
+
+        boolean isValid = palindromeValidator.isAPalindrome("abbb");
+
+        assertThat(isValid, is(false));
+    }
 }
