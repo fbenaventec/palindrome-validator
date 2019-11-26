@@ -5,6 +5,12 @@ This program contains two implementation:
  - The first one it's the simplest, implemented with java utilities
  - The second one it's more basic implementation: it does not contains java utilities to process the string.
 
+With the second implementation I try to improve the efficiency of the code. But I didn't. 
+
+The times of the second process are similar to the first one, even time is worse.
+
+Following the Big O notation the cost of this method is O(n).
+
 ## How to test this program
 There are two ways for execute this program:
  - Offline
